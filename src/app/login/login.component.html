@@ -1,0 +1,13 @@
+<h2 class="logintitle">Login Form</h2>
+<form action="">
+  <div class="container">
+    <mat-form-field class="example-full-width" style="padding: 30px 0px;">
+      <input matInput value="Swathi" placeholder="Username" #message>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput value="swathi" placeholder="Password" #action>
+    </mat-form-field>
+    <button mat-flat-button color="accent" type = "submit" (click)="openSnackBar(message.value, action.value)">Login</button>
+  </div>
+</form>
+
